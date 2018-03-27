@@ -15,8 +15,24 @@
 get_header();
 
 
-?>
-  <p> How the content will be displayed on the page! Important to understand!</p>
+?><div id="invitation-top"></div>
+<div id="invitation"><img src="/wp-content/themes/wedding/img/cupidon.png" id="cupidon"> <pre> Together with their families
+Alexis Lee West
+and
+Taylor Eliot Keegan
+request the pleasure of your company
+at the celebration of their marriage
+
+Saturday, the seventh of June
+two thousand fourteen
+at half past four in the afternoon
+
+The Prospect Pavilion
+409 Ocean Parkway
+Brooklyn, New York
+
+Dinner and dancing to follow </pre></div>
+<div id="invitation-bottom"></div>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
