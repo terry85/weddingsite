@@ -106,4 +106,40 @@ body {
     right: 114px;
 }
 
+#footer {
+        background-color: #e0d6cd;
+        height:7px;
+        width: 100%;
+        position:absolute
+}
 
+#footer-top {
+    background-image:url("/wp-content/themes/wedding/img/footer_bg.gif");
+    background-repeat:repeat-x;
+    height: 1px;
+        
+}
+#footer-beforelace {
+    background-color:#ffffff;
+    height:50px;
+    width:100%;
+}
+
+#footer-lace {
+    background-image:url("/wp-content/themes/wedding/img/lace_t_up.png");
+    background-repeat: repeat-x;
+    height: 15px;
+    
+}
+nav {
+    margin-left: 356px;
+}
+
+.main-menu {
+    background-image: url(/wp-content/themes/wedding/img/bg.gif);
+    color: #574845;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-left: 25px;
+    
+}
