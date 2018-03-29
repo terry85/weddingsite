@@ -131,15 +131,27 @@ body {
     height: 15px;
     
 }
-nav {
-    margin-left: 356px;
+nav div ul {
+    list-style: none;
+    display: flex;
+    width:800px;
+    margin-left: auto;
+    margin-right:auto;
+    
 }
 
-.main-menu {
+nav div ul li a {
     background-image: url(/wp-content/themes/wedding/img/bg.gif);
     color: #574845;
     font-size: 18px;
     font-family: sans-serif;
     margin-left: 25px;
+    text-decoration: none;
+    
+}
+
+nav div ul li a:hover {
+    
+    text-decoration:underline;
     
 }

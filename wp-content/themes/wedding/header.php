@@ -46,17 +46,19 @@
 		</div><!-- .site-branding -->
 
 		<nav>
-			<button class="main-menu" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Strona główna', 'wedding' ); ?></button>
+			<!--<button class="main-menu" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Strona główna', 'wedding' ); ?></button>
                         <button class="main-menu" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'ślub i wesele', 'wedding' ); ?></button>
                         <button class="main-menu" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Nasza galeria', 'wedding' ); ?></button>
-                        <button class="main-menu" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Kontakt', 'wedding' ); ?></button>
+                        <button class="main-menu" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Kontakt', 'wedding' ); ?></button> -->
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
+                                'show_home'      =>  true,
 			) );
 			?>
-		</nav><!-- #site-navigation -->
+		</nav> 
+                 
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
