@@ -15,8 +15,15 @@
 get_header();
 
 
-?><div id="invitation-top"></div>
-<div id="invitation"><img src="/wp-content/themes/wedding/img/cupidon.png" id="cupidon"> <pre> Together with their families
+?>
+<div >
+    
+    <img src="/wp-content/themes/wedding/img/frame.png">
+   
+</div>
+
+<div id="invitation-top"></div>
+<div id="invitation"> <pre> Together with their families
 Alexis Lee West
 and
 Taylor Eliot Keegan
