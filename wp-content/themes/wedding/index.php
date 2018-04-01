@@ -16,70 +16,40 @@ get_header();
 
 
 ?>
-<div >
+
+<div>
     
-    <img src="/wp-content/themes/wedding/img/frame.png">
+    <div id="invitation-top"></div>
+    <div id="invitation"> 
+        <div>
+            <img src="/wp-content/themes/wedding/img/frame.png" id="wedding-photo">
    
-</div>
-
-<div id="invitation-top"></div>
-<div id="invitation"> <pre> Together with their families
-Alexis Lee West
-and
-Taylor Eliot Keegan
-request the pleasure of your company
-at the celebration of their marriage
-
-Saturday, the seventh of June
-two thousand fourteen
-at half past four in the afternoon
-
-The Prospect Pavilion
-409 Ocean Parkway
-Brooklyn, New York
-
-Dinner and dancing to follow </pre></div>
-<div id="invitation-bottom"></div>
+        </div>
+        <div id="invitation-text" class="clearfix" >
+        
+            Renata Gawron i Bogdan Kuryło<br>
+            wraz z Rodzicami<br>
+            mają zaszczyt zaprosić<br>
+            na uroczystość Sakramentu Małżeństwa,<br>
+            która odbędzie się<br>
+            w dniu 6 października 2018 roku<br>
+            o godzinie 14:00<br>
+            w Parafii pw. Najwiętszej Marii Panny Wniebowziętej w Wielopolu Skrzyńskim<br>
+            <br>
+            Po uroczystośći zaślubin miło nam będzie gościć Państwa na przyjęciu weselnym w Hotelu "Ines" w Sędziszowie Małopolskim.<br>
+            <br>
+            Miłość mi wszystko wyjaśniła<br>
+            Miłość wszystko rozwiązała<br>
+            Dlatego uwielbiam tę Miłość,<br>
+            Gdziekolwiek by przebywała.<br>
+            <div id="author">Poezja Jan Paweł II</div>
+       
+        </div>
+    </div>
+    <div id="invitation-bottom"></div>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
-		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();

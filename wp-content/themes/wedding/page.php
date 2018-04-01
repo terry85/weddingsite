@@ -14,27 +14,35 @@
 
 get_header();
 ?>
+    <div>
+    <div id="invitation-top"></div>
+    <div id="invitation" class="title-aligned-<?php echo get_post_meta(get_the_ID(), 'title-align', true) ?>"> 
+        <?php
+            while ( have_posts() ) :
+                    the_post();
+            
+                    get_template_part( 'template-parts/content', 'page' );
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+                    // If comments are open or we have at least one comment, load up the comment template.
+                    if ( comments_open() || get_comments_number() ) :
+                            comments_template();
+                    endif;
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+            endwhile; // End of the loop.
 
-			get_template_part( 'template-parts/content', 'page' );
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+        ?>
+    </div>
+    <div id="invitation-bottom"></div>
+</div>
+	<!--<div id="primary" class="content-area">
+		<main id="main" class="site-main">-->
 
-		endwhile; // End of the loop.
-		?>
+		
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();
