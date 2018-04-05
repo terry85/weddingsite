@@ -396,7 +396,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: OpenSans, sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -404,6 +404,8 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+        font-family:'cheltenham-italic-500', sans-serif;
+        font-weight: normal;
 }
 
 p {
@@ -622,7 +624,7 @@ a:visited {
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	
 }
 
 a:focus {
@@ -1014,9 +1016,9 @@ body {
    
 }
 #top-text {
-    font-family: sans-serif;
+    font-family:'cheltenham-italic-500',sans-serif;
     color: #f095a4;
-    font-size: 18px;
+    font-size: 26px;
     text-decoration:none
     
 }
@@ -1091,7 +1093,7 @@ body {
 nav div ul {
     list-style: none;
     display: flex;
-    width:800px;
+    width:1000px;
     margin-left: auto;
     margin-right:auto;
     margin-top: 30px;
@@ -1101,16 +1103,18 @@ nav div ul {
 nav div ul li a {
     background-image: url(/wp-content/themes/wedding/img/bg.gif);
     color: #574845;
-    font-size: 18px;
-    font-family: sans-serif;
+    font-size: 37px;
+    font-family: echelon, sans-serif;
     margin-left: 25px;
     text-decoration: none;
+    white-space: nowrap;
     
 }
 
 nav div ul li a:hover {
     
-    text-decoration:underline;
+    text-decoration:none;
+    border-bottom: 1px solid #7b605b;
     
 }
 #wedding-photo-wrapper {
@@ -1158,3 +1162,25 @@ nav div ul li a:hover {
 }
 
 .edit-link { display: none; }
+
+@font-face {
+    font-family: 'cheltenham-italic-500';
+    src: url("/wp-content/themes/wedding/fonts/cheltenham-italic-500.woff");
+    font-style: italic;
+    font-weight: 500
+}
+
+@font-face {
+    font-family: echelon;
+    src: url("/wp-content/themes/wedding/fonts/echelon it.woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("/wp-content/themes/wedding/fonts/OpenSans.woff");
+    font-weight: normal;
+}
+
+
+
